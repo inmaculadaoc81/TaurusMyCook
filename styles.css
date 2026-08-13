@@ -59,16 +59,16 @@ a.tm-nav-link{padding:6px 12px}
 .tm-menu-toggle span{display:block;height:2px;background:#fff;border-radius:2px}
 
 /* hero */
-.tm-hero{position:relative;overflow:hidden;background:var(--charcoal);color:#fff;padding:60px 0 80px}
-.tm-hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1.6px,transparent 1.6px);background-size:26px 26px;-webkit-mask-image:radial-gradient(600px 400px at 82% 4%,#000 0%,transparent 72%);mask-image:radial-gradient(600px 400px at 82% 4%,#000 0%,transparent 72%)}
+.tm-hero{position:relative;overflow:hidden;background:var(--cream);color:var(--ink);padding:60px 0 80px;border-bottom:1px solid var(--line)}
+.tm-hero-dots{position:absolute;inset:0;background-image:radial-gradient(circle at 84% 6%,rgba(232,84,58,.16),transparent 42%),radial-gradient(circle at 6% 94%,rgba(26,26,26,.07),transparent 40%),radial-gradient(rgba(232,84,58,.20) 1.8px,transparent 1.8px),radial-gradient(rgba(26,26,26,.07) 1.8px,transparent 1.8px);background-size:auto,auto,28px 28px,28px 28px;background-position:0 0,0 0,0 0,14px 14px}
 .tm-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(340px,.8fr);gap:52px;align-items:start}
-.tm-eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;color:#f3a58c}
-.tm-eyebrow-copper{color:var(--copper-2)}
-.tm-hero h1{font-family:var(--font-head);font-size:clamp(36px,4.4vw,58px);line-height:1.08;letter-spacing:-.01em;margin:16px 0 18px}
-.tm-hero h1 span{color:var(--copper-2);font-style:italic}
-.tm-lead{font-size:18px;color:#d4d4d4;max-width:720px}
+.tm-eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;color:var(--copper-dark)}
+.tm-eyebrow-copper{color:var(--copper-dark)}
+.tm-hero h1{font-family:var(--font-head);font-size:clamp(36px,4.4vw,58px);line-height:1.08;letter-spacing:-.01em;margin:16px 0 18px;color:var(--ink)}
+.tm-hero h1 span{color:var(--copper-dark);font-style:italic}
+.tm-lead{font-size:18px;color:var(--muted);max-width:720px}
 .tm-hero-badges{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}
-.tm-hero-badges span{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);padding:8px 13px;border-radius:999px;font-size:12.5px;font-weight:700}
+.tm-hero-badges span{border:1px solid var(--line);background:var(--cream-alt);padding:8px 13px;border-radius:999px;font-size:12.5px;font-weight:700;color:var(--ink)}
 .tm-badge-price{background:var(--copper)!important;border-color:var(--copper)!important;color:#fff!important;font-weight:800!important}
 .tm-hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
 .tm-cta{min-height:70px;border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px;font-weight:800;transition:.22s}
@@ -81,10 +81,10 @@ a.tm-nav-link{padding:6px 12px}
 .tm-cta-copper{background:linear-gradient(135deg,var(--copper),var(--copper-2));color:#fff}
 .tm-cta-dark{background:#101010;color:#fff;border:1px solid rgba(255,255,255,.16)}
 .tm-cta-ic{width:28px;height:28px;border-radius:8px;display:grid!important;place-items:center;background:rgba(255,255,255,.16);font-size:16px}
-.tm-microcopy{font-size:12px;color:#a8a8a8;margin-top:16px}
+.tm-microcopy{font-size:12px;color:var(--muted);margin-top:16px}
 
 /* recipe-card style info box */
-.tm-info-card{background:var(--cream);color:var(--ink);border:2px dashed var(--copper-2);border-radius:4px 22px 4px 22px;padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative}
+.tm-info-card{background:var(--cream-alt);color:var(--ink);border:2px dashed var(--copper-2);border-radius:4px 22px 4px 22px;padding:26px;box-shadow:0 24px 54px rgba(0,0,0,.12);position:relative}
 .tm-info-card:before{content:"";position:absolute;top:-10px;left:26px;width:52px;height:20px;background:var(--copper);border-radius:3px;box-shadow:0 3px 6px rgba(0,0,0,.2)}
 .tm-info-top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--font-head);font-size:19px;font-weight:700;padding-bottom:12px;color:var(--charcoal)}
 .tm-info-top b{font-size:11px;font-family:var(--font-body);background:var(--copper);color:#fff;padding:5px 11px;border-radius:999px;align-self:center;font-weight:700}
