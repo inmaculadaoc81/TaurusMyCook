@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180">
+<rect width="850" height="180" rx="18" fill="#ffffff"/>
+<g transform="translate(24 18)">
+  <circle cx="70" cy="70" r="54" fill="#173e70"/>
+  <path d="M35 88h70" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M52 48h37c15 0 23 11 23 23v17H72v34H54V72c0-11-2-24-2-24z" fill="#fff"/>
+  <path d="M78 61h34l13 12-13 12H79" fill="#fff"/>
+  <path d="M42 38l-10-12M108 37l11-13M28 62H12M121 62h16" stroke="#8bc2ff" stroke-width="7" stroke-linecap="round"/>
+</g>
+<text x="165" y="78" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="800" fill="#173e70">Taurus</text>
+<text x="355" y="78" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="800" fill="#4f86c6">mycook</text>
+<text x="568" y="78" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="800" fill="#173e70">tech</text>
+<text x="168" y="120" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="2.2" fill="#6d7f92">SERVICIO TÉCNICO ROBOT COCINA TAURUS</text>
+</svg>

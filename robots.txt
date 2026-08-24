@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://taurusmycooktech.com.es/sitemap.xml
