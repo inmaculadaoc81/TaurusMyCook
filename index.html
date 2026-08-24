@@ -7,12 +7,17 @@
 <link rel="canonical" href="https://taurusmycooktech.com.es/">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/styles.css">
+<meta property="og:title" content="Taurusmycooktech | Servicio Técnico robot Cocina Taurus en Madrid">
+<meta property="og:description" content="Reparación de robots de cocina Taurus Mycook en Madrid. Diagnóstico 20 € + IVA.">
+<meta property="og:url" content="https://taurusmycooktech.com.es/">
+<meta property="og:type" content="website">
 </head>
 <body>
 
 <header class="header"><div class="wrap nav">
 <a href="#inicio"><img class="logo" src="/assets/logo.svg" alt="Taurusmycooktech"></a>
-<nav class="links"><a href="#problemas">Qué le pasa</a><a href="#revision">Qué revisamos</a><a href="#recogida">Recogida</a><a href="#cita">Pedir cita</a><a href="#contacto">Contacto</a><a class="navcall" href="tel:+34914468503">Atención Telefónica 24 horas 365 días</a></nav>
+<nav class="links" id="mainMenu"><a href="#problemas">Qué le pasa</a><a href="#revision">Qué revisamos</a><a href="#recogida">Recogida</a><a href="#cita">Pedir cita</a><a href="#sobre-taurus">Sobre Taurus Mycook</a><a href="#contacto">Contacto</a><a class="navcall" href="tel:+34914468503">Atención Telefónica 24 horas 365 días</a></nav>
+<button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainMenu">Menú</button>
 </div></header>
 
 <main>
@@ -81,6 +86,17 @@
 
 <section id="cita"><div class="wrap"><div class="kicker">Si prefieres dejarlo agendado</div><h2 class="title">Reserva una cita de 30 minutos.</h2><p class="lead">Elige el día y la hora que mejor te venga sin salir de la página.</p><iframe class="cal-frame" src="https://cal.com/kelatos/30min?embed=true&theme=light" title="Reserva una cita con Taurusmycooktech" loading="lazy"></iframe></div></section>
 
+<section class="seo-content" id="sobre-taurus"><div class="wrap">
+<div class="kicker">Servicio técnico Taurus Mycook en Madrid</div>
+<h2 class="title">Reparación de robots de cocina Taurus Mycook</h2>
+<div class="seo-text">
+<p>El <strong>Taurus Mycook</strong> es un robot de cocina multifunción que combina báscula de precisión, sistema de calentamiento, cuchillas y control por pantalla táctil para picar, cocinar, amasar o mezclar. Al integrar tantos sistemas en un mismo equipo, una avería puede tener causas distintas aunque el síntoma parezca el mismo: por ejemplo, que "no caliente" puede deberse al sensor de temperatura, a la resistencia o a un fallo electrónico, y no conviene sustituir piezas sin confirmar primero cuál es el origen real.</p>
+<p>En <strong>Taurusmycooktech</strong> revisamos el motor y la transmisión de las cuchillas, el sistema de calentamiento, la báscula y sus sensores, la pantalla y los controles, y el estado de vaso, juntas y cierres para detectar pérdidas de líquido o vapor. El objetivo del diagnóstico es identificar la causa exacta antes de proponer una reparación, para que sepas con claridad qué le ocurre a tu robot de cocina y qué opciones tienes.</p>
+<p>Nuestro taller está en el barrio de Moncloa (Madrid), con servicio de recogida disponible si no puedes desplazarte con el equipo. El diagnóstico tiene un coste de 20 € + IVA.</p>
+<p><small>Taurusmycooktech es un servicio técnico independiente. Taurus y Mycook son marcas registradas de sus respectivos titulares; no somos servicio técnico oficial de la marca.</small></p>
+</div>
+</div></section>
+
 <section class="faq"><div class="wrap"><div class="kicker">Preguntas frecuentes</div><h2 class="title">Lo que normalmente quieres saber antes de dejar tu Taurus.</h2>
 <details><summary>¿Cuánto cuesta el diagnóstico?</summary><p>El diagnóstico tiene un coste de 20 € + IVA.</p></details>
 <details><summary>¿Reparáis robots de cocina Taurus Mycook?</summary><p>Sí. Esta web está enfocada a la reparación de robots de cocina Taurus.</p></details>
@@ -117,6 +133,10 @@ createChat({
 });
 </script>
 <script>
+const menuBtn=document.getElementById('menuBtn');const mainMenu=document.getElementById('mainMenu');
+menuBtn?.addEventListener('click',()=>{const open=mainMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open?'true':'false')});
+mainMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mainMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
+
 const form=document.getElementById('contact-form');const statusEl=document.getElementById('form-status');
 form.addEventListener('submit',async(e)=>{
  e.preventDefault();const btn=form.querySelector('button[type=submit]');btn.disabled=true;statusEl.textContent='Enviando...';
@@ -127,5 +147,24 @@ form.addEventListener('submit',async(e)=>{
  }catch(err){console.error(err);statusEl.textContent='No se pudo enviar. Puedes contactar por teléfono o WhatsApp.';statusEl.style.color='#b72f2f';}
  finally{btn.disabled=false}
 });
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Taurusmycooktech | Servicio Técnico robot Cocina Taurus",
+  "url":"https://taurusmycooktech.com.es/",
+  "telephone":"+34 914 46 85 03",
+  "description":"Reparación de robots de cocina Taurus Mycook en Madrid.",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"C. Joaquín María López, 26",
+    "postalCode":"28015",
+    "addressLocality":"Madrid",
+    "addressCountry":"ES"
+  },
+  "areaServed":"Madrid",
+  "sameAs":["https://maps.app.goo.gl/j64LPQMwR6afsvvC8","https://www.youtube.com/channel/UCaxAqLD9Mk5gvzqoDedlWSA"]
+}
 </script>
 </body></html>
