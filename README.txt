@@ -46,6 +46,34 @@ sin tocar el diseño del hero):
   diferencia del resto de la familia. Añadido
   border:1px solid #fff!important.
 
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "X. Aquí Y." usada en varios repos ("Tu
+  Taurus Mycook ya no cocina. Aquí lo reparamos rápido."). Reescrito
+  en formato imperativo, incluye la marca: "Repara tu Taurus Mycook
+  con diagnóstico incluido." (7 palabras).
+- BUG REAL — texto decorativo gigante ".care-art:before" ("COCINA",
+  105px) sin ninguna reducción de tamaño en tablet/móvil. Añadida
+  (64px tablet, 44px móvil). El badge legible ".care-art:after"
+  ("CALENTAMIENTO · CUCHILLAS · BÁSCULA · PANTALLA") no es un
+  watermark, no se ha tocado.
+- BUG REAL — el botón CTA de teléfono no tenía icono, a diferencia del
+  de WhatsApp. Añadido (verificado con cuidado el cierre de las
+  etiquetas </a>: 20 aperturas / 20 cierres).
+- BUG REAL — la casilla de política de privacidad existía pero el
+  texto no enlazaba a ningún sitio. Añadido el enlace estándar de la
+  familia a https://kelatos.com/privacy-policy/, resaltado en azul.
+- Añadida franja de aviso de servicio técnico independiente debajo del
+  menú (no existía). Verificado antes que .header no usa
+  display:flex directamente.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Verificado sin bugs: .hero-shape es un círculo decorativo sin texto
+  (no hay ninguna etiqueta rotada tipo hero-chip en este repo); el
+  ticker ".hero:after" ya se ocultaba correctamente en móvil; Cal.com
+  ya estaba presente; schema.org ya usaba correctamente el único
+  teléfono de este repo; formulario correctamente conectado a
+  /api/contacto.
+
 REDIRECCIÓN DE URLS ANTIGUAS:
 Este sitio era antes multipágina (tenía /servicios/... y /modelos/...,
 eliminados en commits anteriores al pasar a one-page). Añadido
